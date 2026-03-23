@@ -1,0 +1,421 @@
+:root {
+    --color-dark: #0b0d17;
+    --color-light: #d0d6f9;
+    --color-white: #ffffff;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-family: "Barlow", sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.home {
+    min-height: 100vh;
+    background-image: url("../space-tourism/space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    padding-top: 2rem;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-left: 64px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem 4rem 2rem 3rem;
+    background: rgba(110, 110, 110, 0.3);
+    gap: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    width: 704px;
+}
+
+.nav-menu a {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-menu a span {
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+.nav-menu a.active {
+    padding-bottom: 2rem;
+    border-bottom: 3px solid white;
+}
+
+.home-main {
+    padding: 26rem 8rem 0;
+}
+
+.home-intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 48rem;
+}
+
+.home-text {
+    width: 450px;
+}
+
+.home-text p:first-child {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.home-text p:last-child {
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.home-text h1 {
+    font-family: "Bellefair", serif;
+    font-size: 144px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 24px 0;
+}
+
+.explore-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 272px;
+    height: 272px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.explore-btn::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.explore-btn:hover::after {
+    opacity: 1;
+}
+
+/* Destination */
+
+.destination {
+    min-height: 100vh;
+    background-image: url("../space-tourism/space-tourism-website-main/starter-code/assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.destination-main {
+    padding: 6rem 8rem;
+}
+
+.destination-section h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 4rem;
+}
+
+.destination-section h1 span {
+    opacity: 0.4;
+    margin-right: 1rem;
+}
+
+.destination-content {
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+    margin-top: 10rem;
+}
+
+.destination-image img {
+    width: 445px;
+}
+
+.destination-text {
+    width: 445px;
+}
+
+.destination-nav {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.destination-nav a {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 0.75rem;
+}
+
+.destination-nav a.active-planet {
+    border-bottom: 3px solid white;
+}
+
+.destination-text h2 {
+    font-family: "Bellefair", serif;
+    font-size: 100px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.destination-text>p {
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--color-light);
+    margin-bottom: 2.5rem;
+}
+
+.destination-infos {
+    display: flex;
+    gap: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.destination-infos div p:first-child {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-light);
+    margin-bottom: 0.75rem;
+}
+
+.destination-infos div p:last-child {
+    font-family: "Bellefair", serif;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+/* Crew */
+
+.crew {
+    min-height: 100vh;
+    background-image: url("../space-tourism/space-tourism-website-main/starter-code/assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.crew-main {
+    padding: 6rem 8rem 0;
+}
+
+.crew-section h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 4rem;
+}
+
+.crew-section h1 span {
+    opacity: 0.4;
+    margin-right: 1rem;
+}
+
+.crew-content {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.crew-text {
+    width: 540px;
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+}
+
+.crew-nav {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: auto;
+}
+
+.crew-nav a {
+    font-size: 2rem;
+    opacity: 0.4;
+}
+
+.crew-nav a.active-crew {
+    opacity: 1;
+}
+
+.crew-role {
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+    margin-top: 10rem;
+}
+
+.crew-text h2 {
+    font-family: "Bellefair", serif;
+    font-size: 56px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.crew-description {
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--color-light);
+}
+
+.crew-image img {
+    height: 600px;
+}
+
+/* Technology */
+
+.technology {
+    min-height: 100vh;
+    background-image: url("../space-tourism/space-tourism-website-main/starter-code/assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.technology-main {
+    padding: 6rem 0 0 8rem;
+}
+
+.technology-section h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 4rem;
+}
+
+.technology-section h1 span {
+    opacity: 0.4;
+    margin-right: 1rem;
+}
+
+.technology-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.technology-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.technology-nav a {
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+}
+
+.technology-nav a.active-technology {
+    background-color: white;
+    color: black;
+}
+
+.technology-text {
+    width: 490px;
+}
+
+.technology-subtitle {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-light);
+    margin-bottom: 1rem;
+}
+
+.technology-text h2 {
+    font-family: "Bellefair", serif;
+    font-size: 56px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.technology-description {
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--color-light);
+}
+
+.technology-image {
+    margin-left: auto;
+}
+
+.technology-image img {
+    width: 600px;
+    height: auto;
+    display: block;
+}
