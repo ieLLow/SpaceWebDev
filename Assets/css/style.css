@@ -1,13 +1,7 @@
-:root {
-    --color-dark: #0b0d17;
-    --color-light: #d0d6f9;
-    --color-white: #ffffff;
-}
-
 body {
     min-height: 100vh;
-    background-color: var(--color-dark);
-    color: var(--color-white);
+    background-color: #000000;
+    color: #ffffff;
     font-family: "Barlow", sans-serif;
 }
 
@@ -17,7 +11,7 @@ img {
 }
 
 a {
-    color: inherit;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -74,7 +68,7 @@ header {
 
 .nav-menu a.active {
     padding-bottom: 2rem;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #ffffff;
 }
 
 .home-main {
@@ -121,8 +115,8 @@ header {
     width: 272px;
     height: 272px;
     border-radius: 50%;
-    background-color: white;
-    color: black;
+    background-color: #ffffff;
+    color: #000000;
     font-family: "Bellefair", serif;
     font-size: 32px;
     position: relative;
@@ -144,8 +138,6 @@ header {
 .explore-btn:hover::after {
     opacity: 1;
 }
-
-/* Destination */
 
 .destination {
     min-height: 100vh;
@@ -202,7 +194,7 @@ header {
 }
 
 .destination-nav a.active-planet {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #ffffff;
 }
 
 .destination-text h2 {
@@ -217,7 +209,7 @@ header {
     font-family: "Barlow", sans-serif;
     font-size: 18px;
     line-height: 1.8;
-    color: var(--color-light);
+    color: #ffffff;
     margin-bottom: 2.5rem;
 }
 
@@ -233,7 +225,7 @@ header {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: var(--color-light);
+    color: #ffffff;
     margin-bottom: 0.75rem;
 }
 
@@ -242,8 +234,6 @@ header {
     font-size: 28px;
     text-transform: uppercase;
 }
-
-/* Crew */
 
 .crew {
     min-height: 100vh;
@@ -319,14 +309,12 @@ header {
     font-family: "Barlow", sans-serif;
     font-size: 18px;
     line-height: 1.8;
-    color: var(--color-light);
+    color: #ffffff;
 }
 
 .crew-image img {
     height: 600px;
 }
-
-/* Technology */
 
 .technology {
     min-height: 100vh;
@@ -378,8 +366,8 @@ header {
 }
 
 .technology-nav a.active-technology {
-    background-color: white;
-    color: black;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .technology-text {
@@ -391,7 +379,7 @@ header {
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: var(--color-light);
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
@@ -407,7 +395,7 @@ header {
     font-family: "Barlow", sans-serif;
     font-size: 18px;
     line-height: 1.8;
-    color: var(--color-light);
+    color: #ffffff;
 }
 
 .technology-image {
@@ -418,4 +406,526 @@ header {
     width: 600px;
     height: auto;
     display: block;
+}
+
+.menu-toggle,
+.burger-btn,
+.mobile-menu,
+.close-btn {
+    display: none;
+}
+
+/* Responsive Tab */
+
+@media (max-width: 770px) {
+
+    header {
+        padding-top: 0;
+    }
+
+    .main-nav {
+        align-items: stretch;
+    }
+
+    .logo img {
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    .nav-menu {
+        width: 32rem;
+        padding: 1.5rem 2rem;
+        gap: 1.25rem;
+    }
+
+    .nav-menu a {
+        font-size: 0.7rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .nav-menu a span {
+        display: none;
+    }
+
+    .home {
+        background-image: url("../space-tourism/space-tourism-website-main/starter-code/assets/home/background-home-tablet.jpg");
+    }
+
+    .home-main {
+        padding: 7rem 2rem 3rem;
+    }
+
+    .home-intro {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        text-align: center;
+    }
+
+    .home-text {
+        width: 100%;
+        max-width: 32rem;
+    }
+
+    .home-text p:first-child {
+        font-size: 1.25rem;
+        letter-spacing: 0.25rem;
+    }
+
+    .home-text h1 {
+        font-size: 8rem;
+    }
+
+    .home-text p:last-child {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .explore-btn {
+        width: 15rem;
+        height: 15rem;
+        font-size: 2rem;
+    }
+
+    .explore-btn::after {
+        width: 21rem;
+        height: 21rem;
+    }
+
+    .destination {
+        background-image: url("../space-tourism/space-tourism-website-main/starter-code/assets/destination/background-destination-tablet.jpg");
+    }
+
+    .destination-main {
+        padding: 2.5rem 2rem 3rem;
+    }
+
+    .destination-section h1 {
+        font-size: 1.25rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .destination-content {
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .destination-image img {
+        width: 18rem;
+    }
+
+    .destination-text {
+        width: 100%;
+        max-width: 36rem;
+    }
+
+    .destination-nav {
+        justify-content: center;
+    }
+
+    .destination-text h2 {
+        font-size: 5rem;
+    }
+
+    .destination-text>p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .destination-infos {
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .crew {
+        background-image: url("../space-tourism/space-tourism-website-main/starter-code/assets/crew/background-crew-tablet.jpg");
+    }
+
+    .crew-main {
+        padding: 2.5rem 2rem 0;
+    }
+
+    .crew-section h1 {
+        font-size: 1.25rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .crew-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .crew-text {
+        width: 100%;
+        max-width: 32rem;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .crew-role {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .crew-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .crew-description {
+        font-size: 1rem;
+        line-height: 1.8;
+        max-width: 28rem;
+    }
+
+    .crew-nav {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .crew-image img {
+        height: 31rem;
+    }
+
+    .technology {
+        background-image: url("../space-tourism/space-tourism-website-main/starter-code/assets/technology/background-technology-tablet.jpg");
+    }
+
+    .technology-main {
+        padding: 2.5rem 0 3rem;
+    }
+
+    .technology-section h1 {
+        font-size: 1.25rem;
+        margin-bottom: 2.5rem;
+        padding-left: 2rem;
+    }
+
+    .technology-content {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .technology-image {
+        order: 1;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .technology-image img {
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+    }
+
+    .technology-nav {
+        order: 2;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .technology-nav a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.4rem;
+    }
+
+    .technology-text {
+        order: 3;
+        width: 100%;
+        max-width: 32rem;
+        text-align: center;
+    }
+
+    .technology-subtitle {
+        font-size: 1rem;
+    }
+
+    .technology-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .technology-description {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+}
+
+/* Responsive Mobile */
+
+@media (max-width: 375px) {
+
+    header {
+        padding-top: 1.5rem;
+    }
+
+    .main-nav {
+        align-items: center;
+    }
+
+    .logo img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 1.5rem;
+        margin-top: 0;
+    }
+
+    .nav-menu {
+        width: 18rem;
+        padding: 1.25rem 1rem;
+        gap: 0.75rem;
+    }
+
+    .nav-menu a {
+        font-size: 0.45rem;
+        letter-spacing: 0.08rem;
+        padding-bottom: 1rem;
+    }
+
+    .nav-menu a span {
+        display: none;
+    }
+
+    .home {
+        background-image: url("../space-tourism/space-tourism-website-main/starter-code/assets/home/background-home-mobile.jpg");
+    }
+
+    .home-main {
+        padding: 4rem 1.5rem 2rem;
+    }
+
+    .home-intro {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .home-text {
+        width: 100%;
+    }
+
+    .home-text p:first-child {
+        font-size: 1rem;
+        letter-spacing: 0.15rem;
+        margin-bottom: 1rem;
+    }
+
+    .home-text h1 {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .home-text p:last-child {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .explore-btn {
+        width: 9rem;
+        height: 9rem;
+        font-size: 1.5rem;
+    }
+
+    .explore-btn::after {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .destination {
+        background-image: url("../space-tourism/space-tourism-website-main/starter-code/assets/destination/background-destination-mobile.jpg");
+    }
+
+    .destination-main {
+        padding: 2rem 1.5rem 3rem;
+    }
+
+    .destination-section h1 {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .destination-content {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .destination-image img {
+        width: 10.5rem;
+        margin: 0 auto;
+    }
+
+    .destination-text {
+        width: 100%;
+    }
+
+    .destination-nav {
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .destination-nav a {
+        font-size: 0.9rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .destination-text h2 {
+        font-size: 3.5rem;
+    }
+
+    .destination-text>p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+    }
+
+    .destination-infos {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .destination-infos div p:last-child {
+        font-size: 2rem;
+    }
+
+    .crew {
+        background-image: url("../space-tourism/space-tourism-website-main/starter-code/assets/crew/background-crew-mobile.jpg");
+    }
+
+    .crew-main {
+        padding: 2rem 1.5rem 0;
+    }
+
+    .crew-section h1 {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .crew-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .crew-text {
+        width: 100%;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+    }
+
+    .crew-role {
+        margin-top: 0;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .crew-text h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .crew-description {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .crew-nav {
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    .crew-nav a {
+        font-size: 1.5rem;
+    }
+
+    .crew-image {
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .crew-image img {
+        height: 14rem;
+    }
+
+    .technology {
+        background-image: url("../space-tourism/space-tourism-website-main/starter-code/assets/technology/background-technology-mobile.jpg");
+    }
+
+    .technology-main {
+        padding: 2rem 0 3rem;
+    }
+
+    .technology-section h1 {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-left: 0;
+    }
+
+    .technology-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .technology-image {
+        order: 1;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .technology-image img {
+        width: 100%;
+        height: 10.5rem;
+        object-fit: cover;
+    }
+
+    .technology-nav {
+        order: 2;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .technology-nav a {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .technology-text {
+        order: 3;
+        width: 100%;
+        max-width: 20rem;
+        text-align: center;
+    }
+
+    .technology-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .technology-text h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .technology-description {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
 }
